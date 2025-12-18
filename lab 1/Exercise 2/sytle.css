@@ -1,0 +1,81 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Form Container Styling */
+form {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px;
+    
+    /* Professional Corner Radius & Shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Input and Textarea Styling */
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Subtle rounding for inputs */
+    box-sizing: border-box; /* Prevents padding from breaking width */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus Effect (Blue outline when clicked) */
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Textarea Specifics */
+textarea {
+    resize: vertical; /* Allows resizing height only, prevents widening */
+    font-family: inherit;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

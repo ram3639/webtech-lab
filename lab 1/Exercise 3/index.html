@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/lab 1/Exercise 3/style.css">
+</head>
+<body>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h2>Create Account</h2>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a strong password" minlength="8" required>
+
+        <label for="profile_pic">Choose Profile Picture</label>
+        <input type="file" id="profile_pic" name="profile_pic" accept="image/png, image/jpeg" required>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" class="terms-label">I accept the Terms & Conditions</label>
+        </div>
+
+        <input type="submit" value="Register Now">
+    </form>
+
+</body>
+</html>

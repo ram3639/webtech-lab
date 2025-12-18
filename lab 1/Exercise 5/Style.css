@@ -1,0 +1,45 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #24799e; /* Blue */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Section headings */
+h2 {
+    color: #1e40af; /* Blue shade */
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #3285ab;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
