@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional User Registry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="customAlert" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="alertTitle">Notification</h3>
+            <p id="alertMessage"></p>
+            <button onclick="closeAlert()">Acknowledged</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>User Management Console</h1>
+            <p>Secure local database for registered users.</p>
+        </header>
+
+        <div class="layout-grid">
+            <div class="card">
+                <div class="card-header">Registration</div>
+                <form id="registrationForm">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" id="userName" placeholder="Enter full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="userEmail" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Mobile Number</label>
+                        <input type="tel" id="userMobile" placeholder="Enter your mobile number" maxlength="10" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" id="userPassword" placeholder="Enter password" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Register Account</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="card-header flex-header">
+                    <span>Registered Database</span>
+                    <button id="clearAllBtn" class="btn-clear">Purge All Data</button>
+                </div>
+                <div class="table-container">
+                    <table id="userTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

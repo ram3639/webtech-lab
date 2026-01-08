@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Multimedia Player</title>
+    <link rel="stylesheet" href="/lab 2/Exercise 2/style.css">
+</head>
+<body>
+
+    <div class="media-container">
+        <section class="media-box">
+            <h2>Audio Player</h2>
+            <audio id="myAudio" controls>
+                <source src="web-audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="timer">Time: <span id="audioTime">0:00</span></div>
+        </section>
+
+        <hr>
+
+        <section class="media-box">
+            <h2>Video Player</h2>
+            <video id="myVideo" width="480" controls>
+                <source src="web-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="timer">Time: <span id="videoTime">0:00</span></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Task Board</title>
+    <link rel="stylesheet" href="/lab 2/Exercise 3/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="main-header">
+            <h1>Workflow Manager</h1>
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="Enter new task name...">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+        </header>
+
+        <main class="board">
+            <div class="column" id="col-todo">
+                <div class="column-title">To Do</div>
+                <div class="drop-zone" data-status="to-do"></div>
+            </div>
+
+            <div class="column" id="col-progress">
+                <div class="column-title">In Progress</div>
+                <div class="drop-zone" data-status="in-progress"></div>
+            </div>
+
+            <div class="column" id="col-completed">
+                <div class="column-title">Completed</div>
+                <div class="drop-zone" data-status="completed"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

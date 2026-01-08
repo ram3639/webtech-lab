@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.media-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.media-box {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+audio, video {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.timer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    font-family: monospace;
+    font-size: 1.1em;
+}
