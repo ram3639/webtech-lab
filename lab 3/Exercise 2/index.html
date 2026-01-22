@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Shopping Cart</title>
+    <link rel="stylesheet" href="/lab 3/Exercise 2/style.css">
+</head>
+<body>
+
+<div class="shop-container">
+    <div class="product-list">
+        <h2>Available Products</h2>
+        <div id="productsGrid"></div>
+    </div>
+
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cartItems">
+            <p class="empty-msg">Cart is empty</p>
+        </div>
+        
+        <div class="coupon-section">
+            <input type="text" id="couponInput" placeholder="Enter Coupon (e.g. SAVE10-ELEC)">
+            <button onclick="applyCoupon()">Apply</button>
+            <small id="couponFeedback"></small>
+        </div>
+
+        <div class="cart-summary" id="cartSummary">
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <p>Discounts: -$<span id="discountTotal">0.00</span></p>
+            <hr>
+            <h3>Total: $<span id="grandTotal">0.00</span></h3>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time User Activity Monitor</title>
+    <link rel="stylesheet" href="/lab 3/Exercise 4/style.css">
+</head>
+<body id="monitorBody">
+
+<div class="monitor-layout">
+    <div class="interaction-zone" id="captureZone">
+        <h2>Interaction Zone</h2>
+        <p>Perform actions here (Click, type, focus) to log activity.</p>
+        
+        <div class="input-area">
+            <input type="text" id="testInput" placeholder="Type something...">
+            <button id="testBtn">Action Button</button>
+        </div>
+
+        <div class="warning-box hidden" id="suspiciousWarning">
+            ⚠️ WARNING: Unusual clicking activity detected!
+        </div>
+    </div>
+
+    <div class="log-zone">
+        <div class="log-header">
+            <h3>Activity Log</h3>
+            <div class="controls">
+                <button onclick="exportLog()" class="export-btn">Export Log</button>
+                <button onclick="resetLog()" class="reset-btn">Reset</button>
+            </div>
+        </div>
+        <div id="logContainer" class="log-container">
+            <p class="empty-msg">No activity recorded yet...</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

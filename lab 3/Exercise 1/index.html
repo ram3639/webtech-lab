@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Registration System</title>
+    <link rel="stylesheet" href="/lab 3/Exercise 1/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Registration</h2>
+    <form id="registrationForm" novalidate>
+        
+        <div class="form-group">
+            <label for="role">Select Role:</label>
+            <select id="role" name="role" required>
+                <option value="" disabled selected>Select your role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+            </select>
+            <small class="error-msg" id="roleError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name">
+            <small class="error-msg" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="user@example.com">
+            <small class="error-msg" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="18">
+            <small class="error-msg" id="ageError"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="********">
+            <small class="error-msg" id="passwordError"></small>
+            <div id="passwordStrength" class="strength-meter"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="********">
+            <small class="error-msg" id="confirmPasswordError"></small>
+        </div>
+
+        <div class="form-group hidden" id="skillsSection">
+            <label for="skills">Skills (Comma separated):</label>
+            <input type="text" id="skills" name="skills" placeholder="HTML, CSS, JS">
+            <small class="error-msg" id="skillsError"></small>
+        </div>
+
+        <button type="submit" id="submitBtn" disabled>Register</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

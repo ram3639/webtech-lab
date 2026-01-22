@@ -1,0 +1,28 @@
+body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+.shop-container { display: flex; gap: 30px; max-width: 1000px; margin: auto; }
+
+.product-list, .cart-section { 
+    background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+.product-list { flex: 2; }
+.cart-section { flex: 1; position: sticky; top: 20px; height: fit-content; }
+
+.item-card { 
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px; border-bottom: 1px solid #eee; 
+}
+
+.price { font-weight: bold; color: #2ecc71; }
+.category { font-size: 0.8em; color: #7f8c8d; text-transform: uppercase; }
+
+button { cursor: pointer; padding: 5px 10px; border: none; border-radius: 4px; }
+.add-btn { background: #3498db; color: white; }
+.remove-btn { background: #e74c3c; color: white; padding: 2px 6px; }
+
+.cart-item { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.9em; }
+.cart-summary { margin-top: 20px; border-top: 2px solid #333; padding-top: 10px; }
+
+.coupon-section { margin: 15px 0; display: flex; flex-wrap: wrap; gap: 5px; }
+#couponInput { padding: 8px; flex: 1; border: 1px solid #ddd; }
+#couponFeedback { width: 100%; margin-top: 5px; }

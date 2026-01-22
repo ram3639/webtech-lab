@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Stage Workflow Engine</title>
+    <link rel="stylesheet" href="/lab 3/Exercise 5/style.css">
+</head>
+<body>
+
+<div class="workflow-container">
+    <div class="progress-wrapper">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="steps-indicator">
+            <span>Step 1</span><span>Step 2</span><span>Step 3</span><span>Step 4</span>
+        </div>
+    </div>
+
+    <form id="workflowForm" novalidate>
+        <div class="form-stage active" data-stage="1">
+            <h2>Account Details</h2>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small class="error" id="err-username"></small>
+            </div>
+        </div>
+
+        <div class="form-stage" data-stage="2">
+            <h2>Personal Information</h2>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="fullname" placeholder="John Doe">
+                <small class="error" id="err-fullname"></small>
+            </div>
+        </div>
+
+        <div class="form-stage" data-stage="3">
+            <h2>Professional Profile</h2>
+            <div class="input-group">
+                <label>Company Name</label>
+                <input type="text" id="company" placeholder="Tech Corp">
+                <small class="error" id="err-company"></small>
+            </div>
+        </div>
+
+        <div class="form-stage" data-stage="4">
+            <h2>Review Your Data</h2>
+            <div id="reviewData" class="review-box"></div>
+            <label class="checkbox-label">
+                <input type="checkbox" id="terms"> I agree to the terms
+            </label>
+            <small class="error" id="err-terms"></small>
+        </div>
+
+        <div class="nav-btns">
+            <button type="button" id="prevBtn" disabled>Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

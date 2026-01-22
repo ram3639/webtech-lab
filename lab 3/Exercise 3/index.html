@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Survey Builder</title>
+    <link rel="stylesheet" href="/lab 3/Exercise 3/style.css">
+</head>
+<body>
+
+<div class="builder-container">
+    <h1>Service Feedback Survey</h1>
+    <p>Please fill out the form below. Fields marked with * are required.</p>
+    
+    <form id="dynamicSurvey" novalidate>
+        <div id="surveyContainer"></div>
+        
+        <div class="form-actions">
+            <button type="submit" id="submitSurvey">Submit Responses</button>
+            <p id="mainError" class="error-text hidden">Please fix the errors above before submitting.</p>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
