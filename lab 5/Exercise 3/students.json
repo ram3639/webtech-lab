@@ -1,0 +1,6 @@
+{
+  "students":[
+    {"id":"101","name":"Ram","course":"CSE","marks":"85"},
+    {"id":"102","name":"Tarun","course":"ECE","marks":"78"}
+  ]
+}

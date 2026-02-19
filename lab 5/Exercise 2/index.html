@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Library Book Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Library Book Tracker</h2>
+
+      <div class="formBox">
+        <input type="text" id="id" placeholder="Book ID" />
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="author" placeholder="Author" />
+
+        <select id="status">
+          <option value="">Select Status</option>
+          <option>Available</option>
+          <option>Issued</option>
+        </select>
+
+        <button onclick="addBook()">Save</button>
+        <button onclick="cancelEdit()">Cancel</button>
+      </div>
+
+      <p id="msg"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="bookTable"></tbody>
+      </table>
+    </div>
+
+    <!-- DELETE MODAL -->
+
+    <div id="confirmBox" class="modal">
+      <div class="modal-content">
+        <p>Delete this book?</p>
+        <button onclick="confirmDelete()">Yes</button>
+        <button onclick="closeModal()">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

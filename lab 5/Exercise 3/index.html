@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Record System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Student Record System</h2>
+
+      <div class="formBox">
+        <input type="text" id="id" placeholder="Student ID" />
+        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="course" placeholder="Course" />
+        <input type="number" id="marks" placeholder="Marks" />
+
+        <button onclick="addStudent()">Save</button>
+        <button onclick="cancelEdit()">Cancel</button>
+      </div>
+
+      <p id="msg"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Marks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="stuTable"></tbody>
+      </table>
+    </div>
+
+    <!-- DELETE MODAL -->
+
+    <div id="confirmBox" class="modal">
+      <div class="modal-content">
+        <p>Delete this student?</p>
+        <button onclick="confirmDelete()">Yes</button>
+        <button onclick="closeModal()">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

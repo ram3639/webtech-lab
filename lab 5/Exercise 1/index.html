@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Employee Management System</h2>
+
+      <div class="formBox">
+        <input type="text" id="id" placeholder="Employee ID" />
+        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="dept" placeholder="Department" />
+        <input type="number" id="salary" placeholder="Salary" />
+
+        <button onclick="addEmployee()">Save</button>
+        <button onclick="cancelEdit()">Cancel</button>
+      </div>
+
+      <p id="msg"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Salary</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="empTable"></tbody>
+      </table>
+    </div>
+
+    <!-- DELETE MODAL -->
+
+    <div id="confirmBox" class="modal">
+      <div class="modal-content">
+        <p>Delete this employee?</p>
+
+        <button onclick="confirmDelete()">Yes</button>
+        <button onclick="closeModal()">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

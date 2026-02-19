@@ -1,0 +1,6 @@
+{
+  "products":[
+    {"id":"301","name":"Laptop","category":"Electronics","price":"50000","stock":"5"},
+    {"id":"302","name":"Shoes","category":"Fashion","price":"2000","stock":"2"}
+  ]
+}

@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  font-family: Arial;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.lowStock {
+  background: #ffcccc;
+}
+
+.success {
+  color: green;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: white;
+  width: 300px;
+  margin: 200px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}

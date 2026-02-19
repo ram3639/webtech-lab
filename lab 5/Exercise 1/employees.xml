@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<employees>
+
+    <employee>
+        <id>101</id>
+        <name>Ram</name>
+        <department>CSE</department>
+        <salary>50000</salary>
+    </employee>
+
+    <employee>
+        <id>102</id>
+        <name>Tarun</name>
+        <department>ECE</department>
+        <salary>45000</salary>
+    </employee>
+
+</employees>

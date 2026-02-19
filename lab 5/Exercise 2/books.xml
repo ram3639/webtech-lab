@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<books>
+
+    <book>
+        <id>201</id>
+        <title>DBMS</title>
+        <author>Navathe</author>
+        <status>Available</status>
+    </book>
+
+    <book>
+        <id>202</id>
+        <title>Operating Systems</title>
+        <author>Galvin</author>
+        <status>Issued</status>
+    </book>
+
+</books>
