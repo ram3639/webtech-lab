@@ -1,0 +1,10 @@
+{
+  "products":[
+    {"name":"Laptop","price":55000,"category":"Electronics"},
+    {"name":"Mobile","price":20000,"category":"Electronics"},
+    {"name":"Shoes","price":3000,"category":"Fashion"},
+    {"name":"Watch","price":2500,"category":"Accessories"},
+    {"name":"Headphones","price":1500,"category":"Electronics"},
+    {"name":"Backpack","price":1200,"category":"Fashion"}
+  ]
+}

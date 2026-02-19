@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Student Management System</h2>
+
+      <form id="studentForm">
+        <input type="text" id="id" placeholder="Student ID" required />
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="dept" placeholder="Department" required />
+        <input type="number" id="marks" placeholder="Marks" required />
+
+        <button type="submit">Add / Update</button>
+      </form>
+
+      <p id="msg"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Dept</th>
+            <th>Marks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+      </table>
+    </div>
+
+    <div id="confirmBox" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to delete?</p>
+
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

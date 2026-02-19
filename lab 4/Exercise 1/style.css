@@ -1,0 +1,58 @@
+body{
+    background:#f4f6f9;
+    font-family:Arial;
+}
+
+.container{
+    width:350px;
+    margin:120px auto;
+    padding:30px;
+    background:white;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+input{
+    width:90%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid gray;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#status{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.available{ color:green; }
+.taken{ color:red; }
+.loading{ color:#007bff; }
+
+/* LOADING SPINNER */
+
+.spinner{
+    display:inline-block;
+    width:15px;
+    height:15px;
+    border:3px solid #ccc;
+    border-top:3px solid #007bff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-left:5px;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
