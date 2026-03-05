@@ -1,0 +1,16 @@
+{
+  "name": "lab7-exercise2",
+  "version": "1.0.0",
+  "description": "Online Book Finder using MongoDB, Express and AJAX",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ram Tirlangi",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.6.0"
+  }
+}

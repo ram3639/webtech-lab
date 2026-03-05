@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Online Book Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Online Book Finder</h2>
+
+      <input type="text" id="searchTitle" placeholder="Search book by title" />
+
+      <button onclick="searchBooks()">Search</button>
+
+      <br /><br />
+
+      <select id="category">
+        <option value="Programming">Programming</option>
+        <option value="Database">Database</option>
+        <option value="Web Development">Web Development</option>
+      </select>
+
+      <button onclick="filterCategory()">Filter</button>
+
+      <br /><br />
+
+      <button onclick="sortPrice()">Sort by Price</button>
+
+      <button onclick="sortRating()">Sort by Rating</button>
+
+      <button onclick="topBooks()">Top Rated</button>
+
+      <div id="books"></div>
+
+      <button onclick="loadMore()">Load More</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
