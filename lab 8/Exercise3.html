@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Course Enrollment</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input {
+        width: 100%;
+        padding: 6px;
+        margin: 6px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background: #e67e22;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #d35400;
+      }
+
+      #result {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Course Enrollment</h3>
+
+      <input type="text" id="course" placeholder="Course Name" />
+      <input type="text" id="instructor" placeholder="Instructor Name" />
+      <input type="number" id="seats" placeholder="Available Seats" />
+
+      <button onclick="enroll()">Enroll</button>
+
+      <p id="result"></p>
+    </div>
+
+    <script>
+      class Course {
+        constructor(name, instructor, seats) {
+          this.name = name;
+          this.instructor = instructor;
+          this.seats = seats;
+        }
+
+        display() {
+          return `Course: ${this.name}<br>Instructor: ${this.instructor}`;
+        }
+      }
+
+      function enroll() {
+        let cname = document.getElementById("course").value;
+        let instructor = document.getElementById("instructor").value;
+        let seats = Number(document.getElementById("seats").value);
+
+        let course1 = new Course(cname, instructor, seats);
+
+        document.getElementById("result").innerHTML =
+          course1.display() + "<br>";
+
+        let enrollCourse = new Promise((resolve, reject) => {
+          if (course1.seats > 0) resolve("Enrollment Successful");
+          else reject("Course Full");
+        });
+
+        enrollCourse
+          .then((msg) => {
+            document.getElementById("result").innerHTML += msg;
+          })
+          .catch((err) => {
+            document.getElementById("result").innerHTML += err;
+          });
+        reset();
+      }
+
+      function reset() {
+        document.getElementById("course").value = "";
+        document.getElementById("instructor").value = "";
+        document.getElementById("seats").value = "";
+      }
+    </script>
+  </body>
+</html>

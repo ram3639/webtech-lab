@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Marks</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input {
+        width: 100%;
+        padding: 6px;
+        margin: 6px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background: #3498db;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #2980b9;
+      }
+
+      #result {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Student Marks Calculator</h3>
+
+      <input type="text" id="name" placeholder="Student Name" />
+      <input type="number" id="m1" placeholder="Mark 1" />
+      <input type="number" id="m2" placeholder="Mark 2" />
+      <input type="number" id="m3" placeholder="Mark 3" />
+
+      <button onclick="calculate()">Calculate</button>
+
+      <p id="result"></p>
+    </div>
+
+    <script>
+      const calculateAverage = (a, b, c) => (a + b + c) / 3;
+
+      function calculate() {
+        let name = document.getElementById("name").value;
+        let m1 = Number(document.getElementById("m1").value);
+        let m2 = Number(document.getElementById("m2").value);
+        let m3 = Number(document.getElementById("m3").value);
+
+        let total = m1 + m2 + m3;
+        let avg = calculateAverage(m1, m2, m3);
+
+        document.getElementById("result").innerHTML =
+          `Student Name: ${name}<br>Total Marks: ${total}<br>Average: ${avg.toFixed(2)}`;
+      }
+    </script>
+  </body>
+</html>

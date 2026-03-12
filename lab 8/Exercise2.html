@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Object</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      input {
+        width: 100%;
+        padding: 6px;
+        margin: 6px 0;
+      }
+
+      button {
+        width: 100%;
+        padding: 8px;
+        background: #2ecc71;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #27ae60;
+      }
+
+      pre {
+        background: #eee;
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Student Details</h3>
+
+      <input type="number" id="id" placeholder="Student ID" />
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="dept" placeholder="Department" />
+      <input type="number" id="marks" placeholder="Marks" />
+
+      <button onclick="createStudent()">Submit</button>
+
+      <pre id="output"></pre>
+    </div>
+
+    <script>
+      const getGrade = (m) => {
+        if (m >= 90) return "A";
+        else if (m >= 75) return "B";
+        else if (m >= 60) return "C";
+        else return "D";
+      };
+
+      function createStudent() {
+        const student = {
+          id: Number(document.getElementById("id").value),
+          name: document.getElementById("name").value,
+          department: document.getElementById("dept").value,
+          marks: Number(document.getElementById("marks").value),
+        };
+
+        const { id, name, department, marks } = student;
+
+        let updatedStudent = {
+          ...student,
+          grade: getGrade(marks),
+        };
+
+        document.getElementById("output").textContent =
+          `${id} ${name} ${department} ${marks}
+
+${JSON.stringify(updatedStudent, null, 2)}`;
+      }
+    </script>
+  </body>
+</html>
