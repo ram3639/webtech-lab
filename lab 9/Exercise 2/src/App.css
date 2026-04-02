@@ -1,0 +1,35 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.App-header h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.student-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+@media (max-width: 640px) {
+  .student-container {
+    grid-template-columns: 1fr;
+  }
+}
