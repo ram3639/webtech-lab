@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --primary: hsl(250, 100%, 65%);
+  --primary-glow: hsla(250, 100%, 65%, 0.3);
+  --accent: hsl(190, 100%, 50%);
+  --bg-dark: hsl(230, 25%, 10%);
+  --bg-card: hsla(230, 25%, 15%, 0.7);
+  --text-main: hsl(230, 25%, 95%);
+  --text-muted: hsl(230, 15%, 70%);
+  --error: #ff4d4d;
+  --success: #00e676;
+  --border: hsla(0, 0%, 100%, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 10% 10%, hsla(250, 100%, 65%, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, hsla(190, 100%, 50%, 0.1) 0%, transparent 40%);
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
